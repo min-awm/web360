@@ -1,0 +1,36 @@
+.introduct {
+	margin-bottom: 4rem;
+	&__item {
+		@include flex(center);
+	}
+	&__text,
+	&__image {
+		width: 50%;
+	}
+	&__info {
+		color: #002a5e;
+		font-weight: 500;
+		font-size: 1.5rem;
+		display: block;
+		max-width: 30%;
+		background: #eee;
+		border-start-end-radius: 10rem;
+		padding: 0.5rem 1rem;
+		max-width: 20rem;
+		border-left: 0.4rem solid #ff914d;
+	}
+	&__title {
+		color: #002a5e;
+		padding: 2rem 0;
+		font-size: 2.5rem;
+	}
+	&__image {
+		padding-left: 10rem;
+		transform: translateY(20%);
+	}
+	&-iframe {
+		width: 50rem;
+		height: 50rem;
+		transform: translateX(25%);
+	}
+}

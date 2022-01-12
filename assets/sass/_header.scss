@@ -1,0 +1,35 @@
+.header {
+	height: 6.4rem;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	border-bottom: 1px solid #444;
+	&__inner {
+		@include flex(center, space-between);
+		padding: 0 4rem;
+	}
+	&__menu {
+		&-list {
+			@include flex(center, center);
+		}
+		a {
+			display: inline-block;
+			height: 6.5rem;
+			padding: 0 3rem;
+		}
+		&-item {
+			font-size: 1.7rem;
+			font-weight: 500;
+			line-height: 6.4rem;
+			transition: color 0.25s;
+			.header--active,
+			&:hover a {
+				color: #ff914d;
+				border-bottom: 1px solid #444;
+			}
+		}
+	}
+}

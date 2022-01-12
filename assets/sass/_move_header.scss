@@ -1,0 +1,22 @@
+.move {
+    &-header {
+		position: fixed;
+		right: 12px;
+		bottom: 30px;
+		z-index: 9;
+		&:hover {
+			background-color: #ff2c3a;
+		}
+	}
+	&__top {
+		i {
+			font-size: 3rem;
+			color: white;
+			padding: 15px;
+			background-color: rgba(0, 0, 0, 0.4);
+			border-radius: 4px;
+			display: block;
+			border: 1px solid #fefefe;
+		}
+	}
+}
