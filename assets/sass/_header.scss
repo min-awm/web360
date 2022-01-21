@@ -21,7 +21,7 @@
 			padding: 0 3rem;
 		}
 		&-item {
-			font-size: 1.7rem;
+			font-size: 1.8rem;
 			font-weight: 500;
 			line-height: 6.4rem;
 			transition: color 0.25s;
@@ -32,4 +32,22 @@
 			}
 		}
 	}
+}
+
+// Mobile
+@media only screen and (max-width: 739px) {
+	.logo {
+		margin: 0 auto;
+	}
+	.header__menu {
+		display: none;
+	}
+}
+
+// Tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+// PC
+@media only screen and (min-width: 1024px) {
 }

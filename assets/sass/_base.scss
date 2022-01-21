@@ -16,6 +16,7 @@ img {
 	height: 100%;
 	object-fit: cover;
 	object-position: center center;
+	background-repeat: no-repeat;
 }
 a {
 	text-decoration: none;
@@ -32,6 +33,7 @@ body {
 	font-size: 1.7rem;
 	font-family: "Montserrat", sans-serif;
 	line-height: 1.5;
+	overflow-x: hidden;
 }
 h1,
 h2,
@@ -62,7 +64,7 @@ h6 {
 	color: #fff;
 	border-radius: 0.4rem;
 	transition: all 0.25s;
-	@include flex(center, center)
+	@include flex(center, center);
 }
 .btn--red {
 	background-color: #f01716;
