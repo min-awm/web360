@@ -37,7 +37,9 @@
 			right: 0;
 			bottom: 0;
 			color: white;
-			@include flex(center, center);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 			font-weight: 500;
 			font-size: 1.7rem;
 			letter-spacing: 0.2rem;
@@ -49,6 +51,12 @@
 			-o-transition: all 0.15s ease-in-out;
 			-ms-transition: all 0.15s ease-in-out;
 			transition: all 0.15s ease-in-out;
+			&-mb__tablet {
+				span {
+					text-transform: none;
+					letter-spacing: 0;
+				}
+			}
 		}
 	}
 	&__text {
@@ -111,6 +119,7 @@
 		&__image {
 			&__title {
 				font-size: 0.8rem;
+				min-height: 2.4rem;
 			}
 		}
 		&__text {
@@ -135,4 +144,12 @@
 
 // PC
 @media only screen and (min-width: 1024px) {
+	.business__image__title-mb__tablet {
+		display: none;
+	}
+	.business__image__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
