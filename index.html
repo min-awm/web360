@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="contact-left">
+        <!-- <div class="contact-left">
             <div class="contact__social">
                 <a href="https://www.facebook.com/trannhatminhgtnd">
                     <img src="./assets/img/contact/facebook.png" alt="facebook" class="contact__social-img">
@@ -46,7 +46,7 @@
                     <img src="./assets/img/contact/mess.png" alt="mess" class="contact__social-img">
                 </div>
             </a>
-        </div>
+        </div> -->
         <a href="#" class="move-header">
             <div class="move__top">
                 <i class="fas fa-angle-double-up" class="move__top-icon"></i>
@@ -79,19 +79,18 @@
                         <h3 class="introduct__title">Đơn vị cung cấp giải pháp chuyển đổi số ứng dụng công nghệ tiên
                             tiến</h3>
                         <p class="text">
-                            MinhTien là đơn vị cung cấp giải pháp chuyển đổi số ứng dụng công nghệ thực tế ảo, 3D, 360 và
+                            MinhTien là đơn vị cung cấp giải pháp chuyển đổi số ứng dụng công nghệ thực tế ảo, 3D, 360
+                            và
                             các công
                             nghệ tiên tiến khác nhằm phục vụ mục đích quảng bá, quản lý, bảo tồn, thương mại, hỗ trợ
                             cộng đồng,
                             v.v… dành cho chính phủ, các tổ chức, các doanh nghiệp như: bất động sản, khu du lịch, khách
                             sạn,
-                            căn hộ, trường học, kiến trúc, v.v... 
+                            căn hộ, trường học, kiến trúc, v.v...
                         </p>
                     </div>
-                    <!-- <div class="introduct__image"> -->
-                    <!-- <img src="http://vr360.com.vn/images/about.jpg" alt="images"> -->
-                    <iframe src="https://minha05112003a.github.io/hinh3d" frameborder="0" class="introduct-iframe"></iframe>
-                    <!-- </div> -->
+                    <iframe src="https://minha05112003a.github.io/hinh3d" frameborder="0"
+                        class="introduct-iframe"></iframe>
                 </div>
                 <a href="#" class="button__hover--blue inline-block">
                     <button class="btn btn--red uppercase inline">
@@ -267,6 +266,36 @@
                 </div>
             </div>
         </footer>
+        <!-- Messenger Plugin chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "108196678434353");
+            chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v12.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
     </div>
 </body>
 

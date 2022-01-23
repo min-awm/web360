@@ -1,8 +1,10 @@
 .introduct {
 	margin-bottom: 4rem;
 	margin-top: 4rem;
+	display: block;
 	&__item {
-		@include flex(center);
+		display: flex;
+		flex-wrap: nowrap;
 	}
 	&__text,
 	&__image {
@@ -12,12 +14,10 @@
 		color: #002a5e;
 		font-weight: 500;
 		font-size: 1.5rem;
-		display: block;
-		max-width: 30%;
+		display: inline;
 		background: #eee;
 		border-start-end-radius: 10rem;
-		padding: 0.5rem 1rem;
-		max-width: 20rem;
+		padding: 0.5rem 4rem 0.5rem 1rem;
 		border-left: 0.4rem solid #ff914d;
 	}
 	&__title {
@@ -27,12 +27,6 @@
 	}
 	&__image {
 		padding-left: 10rem;
-		transform: translateY(20%);
-	}
-	&-iframe {
-		width: 50rem;
-		height: 50rem;
-		transform: translateX(25%);
 	}
 }
 // Mobile
@@ -54,29 +48,17 @@
 		&__info {
 			font-weight: 500;
 			font-size: 1.2rem;
-			display: block;
-			max-width: 30%;
-			background: #eee;
-			border-start-end-radius: 10rem;
-			padding: 0.5rem 1rem;
-			max-width: 20rem;
-			border-left: 0.4rem solid #ff914d;
 		}
 		&__title {
 			color: #002a5e;
 			padding: 2rem 0;
 			font-size: 1.6rem;
 		}
-		&__image {
-			padding-left: 10rem;
-			transform: translateY(20%);
-		}
 		&-iframe {
-			width: 70%;
-			height: auto;
-			margin: 0 auto;
-			transform: translateX(0%);
 			margin-bottom: 2.4rem;
+			margin: 0 auto;
+			width: 100%;
+			// height: auto;
 		}
 	}
 }
@@ -104,14 +86,10 @@
 		&__title {
 			font-size: 2rem;
 		}
-		// &__image {
-		// 	padding-left: 10rem;
-		// 	transform: translateY(20%);
-		// }
 		&-iframe {
-			width: 100%;
+			height: 50rem;
+			width: 50rem;
 			margin: 0 auto;
-			transform: translateX(0%);
 			margin-bottom: 2.4rem;
 		}
 	}
@@ -119,4 +97,14 @@
 
 // PC
 @media only screen and (min-width: 1024px) {
+	.introduct {
+		&__item {
+			flex: 1;
+		}
+		&-iframe {
+			flex: 1;
+			width: 100%;
+			height: auto;
+		}
+	}
 }

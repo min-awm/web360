@@ -325,7 +325,18 @@ h6 {
   .logo {
     margin: 0 auto;
   }
+  .logo__img {
+    width: 4rem;
+  }
+  .logo__text {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+  }
 
+  .header {
+    height: 4.2rem;
+  }
   .header__menu {
     display: none;
   }
@@ -436,11 +447,10 @@ h6 {
 .introduct {
   margin-bottom: 4rem;
   margin-top: 4rem;
+  display: block;
 }
 .introduct__item {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-wrap: nowrap;
 }
 .introduct__text, .introduct__image {
@@ -450,12 +460,10 @@ h6 {
   color: #002a5e;
   font-weight: 500;
   font-size: 1.5rem;
-  display: block;
-  max-width: 30%;
+  display: inline;
   background: #eee;
   border-start-end-radius: 10rem;
-  padding: 0.5rem 1rem;
-  max-width: 20rem;
+  padding: 0.5rem 4rem 0.5rem 1rem;
   border-left: 0.4rem solid #ff914d;
 }
 .introduct__title {
@@ -465,12 +473,6 @@ h6 {
 }
 .introduct__image {
   padding-left: 10rem;
-  transform: translateY(20%);
-}
-.introduct-iframe {
-  width: 50rem;
-  height: 50rem;
-  transform: translateX(25%);
 }
 
 @media only screen and (max-width: 739px) {
@@ -491,29 +493,16 @@ h6 {
   .introduct__info {
     font-weight: 500;
     font-size: 1.2rem;
-    display: block;
-    max-width: 30%;
-    background: #eee;
-    border-start-end-radius: 10rem;
-    padding: 0.5rem 1rem;
-    max-width: 20rem;
-    border-left: 0.4rem solid #ff914d;
   }
   .introduct__title {
     color: #002a5e;
     padding: 2rem 0;
     font-size: 1.6rem;
   }
-  .introduct__image {
-    padding-left: 10rem;
-    transform: translateY(20%);
-  }
   .introduct-iframe {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    transform: translateX(0%);
     margin-bottom: 2.4rem;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
@@ -539,10 +528,20 @@ h6 {
     font-size: 2rem;
   }
   .introduct-iframe {
-    width: 100%;
+    height: 50rem;
+    width: 50rem;
     margin: 0 auto;
-    transform: translateX(0%);
     margin-bottom: 2.4rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .introduct__item {
+    flex: 1;
+  }
+  .introduct-iframe {
+    flex: 1;
+    width: 100%;
+    height: auto;
   }
 }
 .business {
@@ -630,6 +629,7 @@ h6 {
   padding: 2rem;
   position: absolute;
   display: flex;
+  align-items: center;
   right: 0;
   bottom: 0;
   font-size: 1.7rem;

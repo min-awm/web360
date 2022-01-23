@@ -38,9 +38,20 @@
 @media only screen and (max-width: 739px) {
 	.logo {
 		margin: 0 auto;
+		&__img {
+			width: 4rem;
+		}
+		&__text {
+			font-weight: 600;
+			letter-spacing: 1.5px;
+			font-size: 1.8rem;
+		}
 	}
-	.header__menu {
-		display: none;
+	.header {
+		height: 4.2rem;
+		&__menu {
+			display: none;
+		}
 	}
 }
 
